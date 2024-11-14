@@ -13,7 +13,7 @@ export class AuthController {
     @Post('register')
     registerUser(@Body() userObj: RegisterAuthDto) {
         console.log(userObj);
-        return userObj.name
+        return userObj;
     }
 
     @Post('login')
