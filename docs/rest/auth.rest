@@ -2,7 +2,7 @@ POST http://127.0.0.1:3000/auth/register
 Content-Type: application/json
 
 {
-    "name": "prueba",
+    "name": "prueba1",
     "email":"admin@gmail.com",
     "password": "123456"
 }
@@ -20,4 +20,4 @@ Content-Type: application/json
 
 ### users
 GET http://127.0.0.1:3000/users
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3MzE2NDk4MDUsImV4cCI6MTczMTY0OTg2NX0.j4XJoqWGAP9NXlS4-DB1i1zM7nTBtJBB4VTlcfqsRpI
