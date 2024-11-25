@@ -3,7 +3,7 @@ import { DataSource } from "typeorm";
 
 export const databaseProvider = [
     {
-        provide: 'DATABASE_CONNECTION',
+        provide: 'DATABASE_CONNECTION_POSTGRES',
         inject: [ConfigService],
         useFactory: (config: ConfigService) => {
             const dataSource = new DataSource({
@@ -13,6 +13,7 @@ export const databaseProvider = [
                 username: config.get('USERNAME') || 'root',
                 password: config.get('PASSWORD') || 'prueba',
                 database: config.get('DATABASE'),
+                entities: [__dirname + '/../**/*.entity{.ts,.js}'],
             });
 
             return dataSource.initialize();
